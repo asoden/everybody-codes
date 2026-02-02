@@ -1,4 +1,3 @@
-
 macro_rules! test {
     ($year:tt $($day:tt),*) => {
         pub mod $year {

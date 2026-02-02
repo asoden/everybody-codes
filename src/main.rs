@@ -1,5 +1,5 @@
 use everybody_codes::util::ansi::*;
-use std::fs::read_to_string;
+use std::{fs::read_to_string, time::Instant};
 
 fn main() {
     let solutions = [event2024()];
@@ -25,7 +25,12 @@ fn solve(event: u32, quest: u32, part: u32, wrapper: fn(&str) -> String) {
     let path = format!("input/{event:02}/everybody_codes_e{event}_q{quest:02}_p{part}.txt");
 
     if let Ok(notes) = read_to_string(&path) {
-        println!("    Part {part}: {BOLD}{WHITE}{}{RESET}", wrapper(&notes));
+        let now = Instant::now();
+        println!(
+            "    Part {part}: {BOLD}{WHITE}{} {:?}{RESET}",
+            wrapper(&notes),
+            now.elapsed()
+        );
     } else {
         eprintln!("    Part {part}: {BOLD}{WHITE}{path}{RESET} missing");
     }
