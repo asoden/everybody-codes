@@ -7,7 +7,7 @@ macro_rules! library {
 }
 
 library!(event2024
-    quest01, quest02
+    quest01, quest02, quest03
 );
 
 library!(util
