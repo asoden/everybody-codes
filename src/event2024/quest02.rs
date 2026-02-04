@@ -11,7 +11,7 @@ pub fn part2(notes: &str) -> i32 {
     let mut runes = vec![0; runic_phrase.len()];
 
     for word in &words {
-        for i in 0..runic_phrase.len() {
+        for i in 0..(runic_phrase.len() - word.len() +1) {
             if runic_phrase[i..].starts_with(word) {
                 for n in 0..word.len() {
                     runes[i + n] = 1;
