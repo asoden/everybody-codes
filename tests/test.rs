@@ -7,5 +7,5 @@ macro_rules! test {
 }
 
 test!(event2024
-    quest01
+    quest01, quest02
 );
