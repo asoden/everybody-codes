@@ -62,5 +62,5 @@ macro_rules! run {
 }
 
 run!(event2024
-    quest01, quest02, quest03
+    quest01, quest02, quest03, quest04
 );
