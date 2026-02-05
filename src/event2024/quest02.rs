@@ -11,7 +11,7 @@ pub fn part2(notes: &str) -> i32 {
     let mut runes = vec![0; runic_phrase.len()];
 
     for word in &words {
-        for i in 0..(runic_phrase.len() - word.len() +1) {
+        for i in 0..(runic_phrase.len() - word.len() + 1) {
             if runic_phrase[i..].starts_with(word) {
                 for n in 0..word.len() {
                     runes[i + n] = 1;
@@ -25,11 +25,14 @@ pub fn part2(notes: &str) -> i32 {
 
 pub fn part3(notes: &str) -> i32 {
     let (words, runic_phrase) = parse(notes, true);
-    let grid: Vec<Vec<u8>> = runic_phrase.split_ascii_whitespace().map(|line| line.bytes().collect()).collect();
+    let grid: Vec<Vec<u8>> = runic_phrase
+        .split_ascii_whitespace()
+        .map(|line| line.bytes().collect())
+        .collect();
     let width = grid[0].len();
     let height = grid.len();
 
-    let mut runes = vec![vec![0;width]; height];
+    let mut runes = vec![vec![0; width]; height];
     for word in words {
         for i in 0..width {
             for j in 0..height {
@@ -41,7 +44,13 @@ pub fn part3(notes: &str) -> i32 {
     runes.iter().map(|row| row.iter().sum::<i32>()).sum()
 }
 
-fn check_right(position: (usize, usize), word: &str, grid: &[Vec<u8>], runes: &mut [Vec<i32>], width: usize) {
+fn check_right(
+    position: (usize, usize),
+    word: &str,
+    grid: &[Vec<u8>],
+    runes: &mut [Vec<i32>],
+    width: usize,
+) {
     let (mut x, y) = position;
 
     for &b in word.as_bytes() {
@@ -61,7 +70,13 @@ fn check_right(position: (usize, usize), word: &str, grid: &[Vec<u8>], runes: &m
     }
 }
 
-fn check_down(position: (usize, usize), word: &str, grid: &[Vec<u8>], runes: &mut [Vec<i32>], height: usize) {
+fn check_down(
+    position: (usize, usize),
+    word: &str,
+    grid: &[Vec<u8>],
+    runes: &mut [Vec<i32>],
+    height: usize,
+) {
     let (x, mut y) = position;
 
     for &b in word.as_bytes() {
@@ -88,6 +103,6 @@ fn parse(notes: &str, reverse_words: bool) -> (Vec<String>, &str) {
         if reverse_words {
             runic_words.push(word.chars().rev().collect());
         }
-}
+    }
     (runic_words, phrase)
 }

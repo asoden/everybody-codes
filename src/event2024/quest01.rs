@@ -11,17 +11,21 @@ pub fn part3(notes: &str) -> i32 {
 }
 
 fn score_potions(notes: &str, size: usize) -> i32 {
-    notes.as_bytes().chunks(size).map(|chunk|{
-        let mut potions = 0;
-        let mut enemies = 0;
+    notes
+        .as_bytes()
+        .chunks(size)
+        .map(|chunk| {
+            let mut potions = 0;
+            let mut enemies = 0;
 
-        for &b in chunk {
-            if b.is_ascii_uppercase() {
-                potions += (2 * (b as i32) - 131).max(0);
-                enemies += 1;
+            for &b in chunk {
+                if b.is_ascii_uppercase() {
+                    potions += (2 * (b as i32) - 131).max(0);
+                    enemies += 1;
+                }
             }
-        }
 
-        potions + enemies * (enemies - 1)
-    }).sum()
+            potions + enemies * (enemies - 1)
+        })
+        .sum()
 }
