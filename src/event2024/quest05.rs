@@ -1,5 +1,5 @@
-use std::{array::from_fn, collections::HashMap};
-// use ahash::{HashMap, HashMapExt};
+use std::array::from_fn;
+use ahash::{HashMap, HashMapExt, HashSet, HashSetExt};
 
 type Dance = [Vec<usize>; 4];
 
@@ -30,8 +30,18 @@ pub fn part2(notes: &str) -> usize {
     }
 }
 
-pub fn part3(notes: &str) -> i32 {
-    4
+pub fn part3(notes: &str) -> usize {
+    let mut dance = dance_grid(notes);
+    let mut history = HashSet::new();
+    let mut round = 0;
+
+    while history.insert(dance.clone()) {
+        dance_dance(&mut dance, round);
+        round += 1;
+    }
+
+    let biggest = history.iter().max_by_key(|dance_instance| shout(&dance_instance)).unwrap();
+    shout(biggest)
 }
 
 fn dance_grid(notes: &str) -> Dance {
@@ -45,7 +55,7 @@ fn dance_grid(notes: &str) -> Dance {
 
 #[inline]
 fn shout(dance: &Dance) -> usize {
-    dance[0][0] * 1000 + dance[1][0] * 100 + dance[2][0] * 10 + dance[3][0]
+    format!("{}{}{}{}", dance[0][0], dance[1][0], dance[2][0], dance[3][0]).parse().unwrap()
 }
 
 fn dance_dance(dance: &mut Dance, round: usize) {

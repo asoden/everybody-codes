@@ -27,7 +27,7 @@ fn solve(event: u32, quest: u32, part: u32, wrapper: fn(&str) -> String) {
     if let Ok(notes) = read_to_string(&path) {
         let now = Instant::now();
         println!(
-            "    Part {part}: {BOLD}{WHITE}{} {:?}{RESET}",
+            "    Part {part}: {BOLD}{WHITE}{} {:.2?}{RESET}",
             wrapper(&notes),
             now.elapsed()
         );
