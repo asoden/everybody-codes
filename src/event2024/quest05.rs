@@ -1,5 +1,5 @@
-use std::array::from_fn;
 use ahash::{HashMap, HashMapExt, HashSet, HashSetExt};
+use std::array::from_fn;
 
 type Dance = [Vec<usize>; 4];
 
@@ -21,8 +21,10 @@ pub fn part2(notes: &str) -> usize {
         dance_dance(&mut dance, round);
         round += 1;
 
-        let val = shout(&dance);
-        let count = seen.entry(val).and_modify(|x| *x += 1).or_insert(1);
+        let count = seen
+            .entry(quick_shout(&dance))
+            .and_modify(|x| *x += 1)
+            .or_insert(1);
 
         if *count == 2024 {
             break round * shout(&dance);
@@ -40,7 +42,10 @@ pub fn part3(notes: &str) -> usize {
         round += 1;
     }
 
-    let biggest = history.iter().max_by_key(|dance_instance| shout(&dance_instance)).unwrap();
+    let biggest = history
+        .iter()
+        .max_by_key(|dance_instance| quick_shout(dance_instance))
+        .unwrap();
     shout(biggest)
 }
 
@@ -55,7 +60,17 @@ fn dance_grid(notes: &str) -> Dance {
 
 #[inline]
 fn shout(dance: &Dance) -> usize {
-    format!("{}{}{}{}", dance[0][0], dance[1][0], dance[2][0], dance[3][0]).parse().unwrap()
+    format!(
+        "{}{}{}{}",
+        dance[0][0], dance[1][0], dance[2][0], dance[3][0]
+    )
+    .parse()
+    .unwrap()
+}
+
+#[inline]
+fn quick_shout(dance: &Dance) -> usize {
+    (dance[0][0] << 48) | (dance[1][0] << 32) | (dance[2][0] << 16) | (dance[3][0])
 }
 
 fn dance_dance(dance: &mut Dance, round: usize) {
@@ -67,4 +82,3 @@ fn dance_dance(dance: &mut Dance, round: usize) {
 
     dance[destination].insert(offset, clappist);
 }
-
