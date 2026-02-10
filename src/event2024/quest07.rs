@@ -95,16 +95,31 @@ fn score(track: &str, laps: usize, plan: &str) -> i64 {
 }
 
 fn scoring_permutations() -> Vec<i64> {
-    let original = "+++++---===";
     let mut scores = Vec::new();
 
-    for plan in original.bytes().permutations(original.len()).unique() {
-        let s: &str;
-        unsafe {
-            s = str::from_utf8_unchecked(&plan);
+    fn permutate(scores: &mut Vec<i64>, plan: &mut String, plus: u8, minus: u8, equal: u8) {
+        if plus + minus + equal == 0 {
+            scores.push(score(TRACK3, 11, plan));
+            return;
         }
-        scores.push(score(TRACK3, 11, s));
+
+        if plus > 0 {
+            plan.push('+');
+            permutate(scores, plan, plus - 1, minus, equal);
+            plan.pop();
+        }
+        if minus > 0 {
+            plan.push('-');
+            permutate(scores, plan, plus, minus - 1, equal);
+            plan.pop();
+        }
+        if equal > 0 {
+            plan.push('=');
+            permutate(scores, plan, plus, minus, equal - 1);
+            plan.pop();
+        }
     }
 
+    permutate(&mut scores, &mut String::with_capacity(11), 5, 3, 3);
     scores
 }
