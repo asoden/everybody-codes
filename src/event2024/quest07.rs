@@ -1,5 +1,4 @@
 use ahash::HashMap;
-use itertools::Itertools;
 
 const TRACK1: &str = "=";
 
