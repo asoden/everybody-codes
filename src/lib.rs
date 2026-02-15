@@ -6,13 +6,9 @@ macro_rules! library {
     }
 }
 
-pub mod event2024 {
-    pub mod quest10;
-}
-
-// library!(event2024
-//     quest01, quest02, quest03, quest04, quest05, quest06, quest07, quest08, quest09, quest10
-// );
+library!(event2024
+    quest01, quest02, quest03, quest04, quest05, quest06, quest07, quest08, quest09, quest10
+);
 
 library!(util
     ansi, tools
