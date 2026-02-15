@@ -12,4 +12,5 @@ lto = "fat"
 
 [dependencies]
 ahash = "0.8.12"
+divan = "0.1.21"
 itertools = "0.14.0"
