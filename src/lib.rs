@@ -1,16 +1,18 @@
-macro_rules! library {
-    ($year:tt $($day:tt),*) => {
-        pub mod $year {
-            $(pub mod $day;)*
-        }
-    }
+pub mod util {
+    pub mod ansi;
+    pub mod tools;
 }
 
-library!(event2024
-    quest01, quest02, quest03, quest04, quest05, quest06, quest07, quest08, quest09, quest10,
-    quest11
-);
-
-library!(util
-    ansi, tools
-);
+pub mod event2024 {
+    pub mod quest01;
+    pub mod quest02;
+    pub mod quest03;
+    pub mod quest04;
+    pub mod quest05;
+    pub mod quest06;
+    pub mod quest07;
+    pub mod quest08;
+    pub mod quest09;
+    pub mod quest10;
+    pub mod quest11;
+}
