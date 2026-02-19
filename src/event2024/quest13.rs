@@ -25,9 +25,13 @@ fn parse(notes: &str) -> Vec<Vec<u8>> {
 fn find_route(map: Vec<Vec<u8>>, start: u8, end: u8) -> u64 {
     let start = find(&map, start);
 
-    dijkstra(&start, |state| find_successors(state, &map), |(x, y)| map[*y as usize][*x as usize] == end)
-        .unwrap()
-        .1
+    dijkstra(
+        &start,
+        |state| find_successors(state, &map),
+        |(x, y)| map[*y as usize][*x as usize] == end,
+    )
+    .unwrap()
+    .1
 }
 
 fn find_successors(state: &(i32, i32), map: &Vec<Vec<u8>>) -> Vec<((i32, i32), u64)> {
