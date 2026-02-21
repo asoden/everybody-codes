@@ -34,7 +34,7 @@ fn find_route(map: Vec<Vec<u8>>, start: u8, end: u8) -> u64 {
     .1
 }
 
-fn find_successors(state: &(i32, i32), map: &Vec<Vec<u8>>) -> Vec<((i32, i32), u64)> {
+fn find_successors(state: &(i32, i32), map: &[Vec<u8>]) -> Vec<((i32, i32), u64)> {
     let mut potential = vec![];
 
     let (x, y) = state;
@@ -66,10 +66,10 @@ fn get_adjacent(grid: &[Vec<u8>], x: i32, y: i32) -> impl Iterator<Item = (i32, 
         })
 }
 
-fn find(map: &Vec<Vec<u8>>, symbol: u8) -> (i32, i32) {
-    for y in 0..map.len() {
-        for x in 0..map[0].len() {
-            if map[y][x] == symbol {
+fn find(map: &[Vec<u8>], symbol: u8) -> (i32, i32) {
+    for (y, row) in map.iter().enumerate() {
+        for (x, val) in row.iter().enumerate() {
+            if *val == symbol {
                 return (x as i32, y as i32);
             }
         }

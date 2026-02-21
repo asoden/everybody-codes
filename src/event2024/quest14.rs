@@ -2,6 +2,8 @@ use std::collections::VecDeque;
 
 use ahash::{HashMap, HashMapExt, HashSet, HashSetExt};
 
+type Point3 = (i32, i32, i32);
+
 pub fn part1(notes: &str) -> i32 {
     let (plan, _) = grow(notes);
     plan.iter().max_by(|x, y| x.1.cmp(&y.1)).unwrap().1
@@ -45,7 +47,7 @@ pub fn part3(notes: &str) -> i32 {
     *murkiness.values().min().unwrap()
 }
 
-fn grow(notes: &str) -> (HashSet<(i32, i32, i32)>, HashSet<(i32, i32, i32)>) {
+fn grow(notes: &str) -> (HashSet<Point3>, HashSet<Point3>) {
     let mut plant = HashSet::new();
     let mut leaves = HashSet::new();
 
