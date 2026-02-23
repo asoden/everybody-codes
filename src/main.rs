@@ -1,24 +1,34 @@
 use everybody_codes::util::ansi::*;
+use std::env::args;
 use std::{fs::read_to_string, time::Instant};
 
 fn main() {
+    let mut args = args().flat_map(|arg| arg.parse::<u32>());
+    let event = args.next();
+    let quest = args.next();
+
     let solutions = [event2024()];
 
     // Filter solutions then pretty print output.
-    solutions.into_iter().flatten().for_each(
-        |Solution {
-             event,
-             quest,
-             part1,
-             part2,
-             part3,
-         }| {
-            println!("{YELLOW}Event {event} Quest {quest}{RESET}");
-            solve(event, quest, 1, part1);
-            solve(event, quest, 2, part2);
-            solve(event, quest, 3, part3);
-        },
-    );
+    solutions
+        .into_iter()
+        .flatten()
+        .filter(|s| event.is_none_or(|e| e == s.event))
+        .filter(|s| quest.is_none_or(|q| q == s.quest))
+        .for_each(
+            |Solution {
+                 event,
+                 quest,
+                 part1,
+                 part2,
+                 part3,
+             }| {
+                println!("{YELLOW}Event {event} Quest {quest}{RESET}");
+                solve(event, quest, 1, part1);
+                solve(event, quest, 2, part2);
+                solve(event, quest, 3, part3);
+            },
+        );
 }
 
 fn solve(event: u32, quest: u32, part: u32, wrapper: fn(&str) -> String) {

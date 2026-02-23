@@ -1,18 +1,18 @@
 use pathfinding::prelude::dijkstra;
 
-pub fn part1(notes: &str) -> u64 {
+pub fn part1(notes: &str) -> u32 {
     let (map, herbs) = parse(notes);
 
     find_route(map, herbs)
 }
 
-pub fn part2(notes: &str) -> u64 {
+pub fn part2(notes: &str) -> u32 {
     let (map, herbs) = parse(notes);
 
     find_route(map, herbs)
 }
 
-pub fn part3(notes: &str) -> u64 {
+pub fn part3(notes: &str) -> u32 {
     let (map, herbs) = parse(notes);
 
     find_route(map, herbs)
@@ -36,7 +36,7 @@ fn parse(notes: &str) -> (Vec<Vec<u8>>, u32) {
     (map, herbs)
 }
 
-fn find_route(map: Vec<Vec<u8>>, herbs_possible: u32) -> u64 {
+fn find_route(map: Vec<Vec<u8>>, herbs_possible: u32) -> u32 {
     let start = find_entry(&map);
 
     dijkstra(
@@ -48,7 +48,7 @@ fn find_route(map: Vec<Vec<u8>>, herbs_possible: u32) -> u64 {
     .1
 }
 
-fn find_successors(state: &((i32, i32), u32), map: &[Vec<u8>]) -> Vec<(((i32, i32), u32), u64)> {
+fn find_successors(state: &((i32, i32), u32), map: &[Vec<u8>]) -> Vec<(((i32, i32), u32), u32)> {
     let mut potential = vec![];
 
     let ((x, y), herbs) = state;
