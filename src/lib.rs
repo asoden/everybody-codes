@@ -1,5 +1,6 @@
 pub mod util {
     pub mod ansi;
+    pub mod math;
     pub mod tools;
 }
 
@@ -19,4 +20,5 @@ pub mod event2024 {
     pub mod quest13;
     pub mod quest14;
     pub mod quest15;
+    pub mod quest16;
 }
