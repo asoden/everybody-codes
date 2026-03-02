@@ -23,4 +23,5 @@ pub mod event2024 {
     pub mod quest16;
     pub mod quest17;
     pub mod quest18;
+    pub mod quest19;
 }
