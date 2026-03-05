@@ -11,7 +11,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 memory          fastest       │ slowest       │ median        │ mean          │ samples │ iters
 ╰─ event2024                  │               │               │               │         │
    ├─ quest01                 │               │               │               │         │
-   │  ├─ part1  330.7 µs      │ 330.7 µs      │ 330.7 µs      │ 330.7 µs      │ 1       │ 1
+   │  ├─ part1  74.44 µs      │ 74.44 µs      │ 74.44 µs      │ 74.44 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           1.066 KB    │ 1.066 KB      │ 1.066 KB      │ 1.066 KB      │         │
@@ -21,7 +21,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           66 B        │ 66 B          │ 66 B          │ 66 B          │         │
-   │  ├─ part2  174.7 µs      │ 174.7 µs      │ 174.7 µs      │ 174.7 µs      │ 1       │ 1
+   │  ├─ part2  68.35 µs      │ 68.35 µs      │ 68.35 µs      │ 68.35 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           2.066 KB    │ 2.066 KB      │ 2.066 KB      │ 2.066 KB      │         │
@@ -31,7 +31,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           66 B        │ 66 B          │ 66 B          │ 66 B          │         │
-   │  ╰─ part3  130.8 µs      │ 130.8 µs      │ 130.8 µs      │ 130.8 µs      │ 1       │ 1
+   │  ╰─ part3  71.31 µs      │ 71.31 µs      │ 71.31 µs      │ 71.31 µs      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              2           │ 2             │ 2             │ 2             │         │
    │              9.066 KB    │ 9.066 KB      │ 9.066 KB      │ 9.066 KB      │         │
@@ -42,7 +42,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              1           │ 1             │ 1             │ 1             │         │
    │              66 B        │ 66 B          │ 66 B          │ 66 B          │         │
    ├─ quest02                 │               │               │               │         │
-   │  ├─ part1  131.3 µs      │ 131.3 µs      │ 131.3 µs      │ 131.3 µs      │ 1       │ 1
+   │  ├─ part1  77.42 µs      │ 77.42 µs      │ 77.42 µs      │ 77.42 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           9           │ 9             │ 9             │ 9             │         │
    │  │           681 B       │ 681 B         │ 681 B         │ 681 B         │         │
@@ -55,7 +55,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           96 B        │ 96 B          │ 96 B          │ 96 B          │         │
-   │  ├─ part2  5.534 ms      │ 5.534 ms      │ 5.534 ms      │ 5.534 ms      │ 1       │ 1
+   │  ├─ part2  6.025 ms      │ 6.025 ms      │ 6.025 ms      │ 6.025 ms      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           99          │ 99            │ 99            │ 99            │         │
    │  │           112.5 KB    │ 112.5 KB      │ 112.5 KB      │ 112.5 KB      │         │
@@ -68,7 +68,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           15          │ 15            │ 15            │ 15            │         │
    │  │           3.056 KB    │ 3.056 KB      │ 3.056 KB      │ 3.056 KB      │         │
-   │  ╰─ part3  7.421 ms      │ 7.421 ms      │ 7.421 ms      │ 7.421 ms      │ 1       │ 1
+   │  ╰─ part3  7.508 ms      │ 7.508 ms      │ 7.508 ms      │ 7.508 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              404         │ 404           │ 404           │ 404           │         │
    │              142 KB      │ 142 KB        │ 142 KB        │ 142 KB        │         │
@@ -82,7 +82,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              31          │ 31            │ 31            │ 31            │         │
    │              9.184 KB    │ 9.184 KB      │ 9.184 KB      │ 9.184 KB      │         │
    ├─ quest03                 │               │               │               │         │
-   │  ├─ part1  204.9 µs      │ 204.9 µs      │ 204.9 µs      │ 204.9 µs      │ 1       │ 1
+   │  ├─ part1  127.5 µs      │ 127.5 µs      │ 127.5 µs      │ 127.5 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           18          │ 18            │ 18            │ 18            │         │
    │  │           4.965 KB    │ 4.965 KB      │ 4.965 KB      │ 4.965 KB      │         │
@@ -95,7 +95,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           7           │ 7             │ 7             │ 7             │         │
    │  │           2.272 KB    │ 2.272 KB      │ 2.272 KB      │ 2.272 KB      │         │
-   │  ├─ part2  222.5 µs      │ 222.5 µs      │ 222.5 µs      │ 222.5 µs      │ 1       │ 1
+   │  ├─ part2  115.3 µs      │ 115.3 µs      │ 115.3 µs      │ 115.3 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           39          │ 39            │ 39            │ 39            │         │
    │  │           32.65 KB    │ 32.65 KB      │ 32.65 KB      │ 32.65 KB      │         │
@@ -108,7 +108,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           12          │ 12            │ 12            │ 12            │         │
    │  │           17.76 KB    │ 17.76 KB      │ 17.76 KB      │ 17.76 KB      │         │
-   │  ╰─ part3  344 µs        │ 344 µs        │ 344 µs        │ 344 µs        │ 1       │ 1
+   │  ╰─ part3  270.1 µs      │ 270.1 µs      │ 270.1 µs      │ 270.1 µs      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              58          │ 58            │ 58            │ 58            │         │
    │              113.7 KB    │ 113.7 KB      │ 113.7 KB      │ 113.7 KB      │         │
@@ -122,7 +122,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              14          │ 14            │ 14            │ 14            │         │
    │              66.91 KB    │ 66.91 KB      │ 66.91 KB      │ 66.91 KB      │         │
    ├─ quest04                 │               │               │               │         │
-   │  ├─ part1  165.8 µs      │ 165.8 µs      │ 165.8 µs      │ 165.8 µs      │ 1       │ 1
+   │  ├─ part1  72.22 µs      │ 72.22 µs      │ 72.22 µs      │ 72.22 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           97 B        │ 97 B          │ 97 B          │ 97 B          │         │
@@ -135,7 +135,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           48 B        │ 48 B          │ 48 B          │ 48 B          │         │
-   │  ├─ part2  162.1 µs      │ 162.1 µs      │ 162.1 µs      │ 162.1 µs      │ 1       │ 1
+   │  ├─ part2  105.1 µs      │ 105.1 µs      │ 105.1 µs      │ 105.1 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           2.023 KB    │ 2.023 KB      │ 2.023 KB      │ 2.023 KB      │         │
@@ -148,7 +148,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           6           │ 6             │ 6             │ 6             │         │
    │  │           1.008 KB    │ 1.008 KB      │ 1.008 KB      │ 1.008 KB      │         │
-   │  ╰─ part3  197.7 µs      │ 197.7 µs      │ 197.7 µs      │ 197.7 µs      │ 1       │ 1
+   │  ╰─ part3  66.95 µs      │ 66.95 µs      │ 66.95 µs      │ 66.95 µs      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              2           │ 2             │ 2             │ 2             │         │
    │              6.547 KB    │ 6.547 KB      │ 6.547 KB      │ 6.547 KB      │         │
@@ -162,7 +162,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              7           │ 7             │ 7             │ 7             │         │
    │              2.032 KB    │ 2.032 KB      │ 2.032 KB      │ 2.032 KB      │         │
    ├─ quest05                 │               │               │               │         │
-   │  ├─ part1  147 µs        │ 147 µs        │ 147 µs        │ 147 µs        │ 1       │ 1
+   │  ├─ part1  66.84 µs      │ 66.84 µs      │ 66.84 µs      │ 66.84 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           6           │ 6             │ 6             │ 6             │         │
    │  │           303 B       │ 303 B         │ 303 B         │ 303 B         │         │
@@ -175,7 +175,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           4           │ 4             │ 4             │ 4             │         │
    │  │           128 B       │ 128 B         │ 128 B         │ 128 B         │         │
-   │  ├─ part2  87.56 ms      │ 87.56 ms      │ 87.56 ms      │ 87.56 ms      │ 1       │ 1
+   │  ├─ part2  98.63 ms      │ 98.63 ms      │ 98.63 ms      │ 98.63 ms      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           10          │ 10            │ 10            │ 10            │         │
    │  │           13.37 MB    │ 13.37 MB      │ 13.37 MB      │ 13.37 MB      │         │
@@ -188,7 +188,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           20          │ 20            │ 20            │ 20            │         │
    │  │           3.968 KB    │ 3.968 KB      │ 3.968 KB      │ 3.968 KB      │         │
-   │  ╰─ part3  21.92 ms      │ 21.92 ms      │ 21.92 ms      │ 21.92 ms      │ 1       │ 1
+   │  ╰─ part3  20.66 ms      │ 20.66 ms      │ 20.66 ms      │ 20.66 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              58310       │ 58310         │ 58310         │ 58310         │         │
    │              27.71 MB    │ 27.71 MB      │ 27.71 MB      │ 27.71 MB      │         │
@@ -202,7 +202,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              17          │ 17            │ 17            │ 17            │         │
    │              1.928 KB    │ 1.928 KB      │ 1.928 KB      │ 1.928 KB      │         │
    ├─ quest06                 │               │               │               │         │
-   │  ├─ part1  285.6 µs      │ 285.6 µs      │ 285.6 µs      │ 285.6 µs      │ 1       │ 1
+   │  ├─ part1  150 µs        │ 150 µs        │ 150 µs        │ 150 µs        │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           18          │ 18            │ 18            │ 18            │         │
    │  │           4.446 KB    │ 4.446 KB      │ 4.446 KB      │ 4.446 KB      │         │
@@ -215,7 +215,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           19          │ 19            │ 19            │ 19            │         │
    │  │           936 B       │ 936 B         │ 936 B         │ 936 B         │         │
-   │  ├─ part2  267.2 µs      │ 267.2 µs      │ 267.2 µs      │ 267.2 µs      │ 1       │ 1
+   │  ├─ part2  172.5 µs      │ 172.5 µs      │ 172.5 µs      │ 172.5 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           30          │ 30            │ 30            │ 30            │         │
    │  │           217.1 KB    │ 217.1 KB      │ 217.1 KB      │ 217.1 KB      │         │
@@ -228,7 +228,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           43          │ 43            │ 43            │ 43            │         │
    │  │           2.856 KB    │ 2.856 KB      │ 2.856 KB      │ 2.856 KB      │         │
-   │  ╰─ part3  508.2 µs      │ 508.2 µs      │ 508.2 µs      │ 508.2 µs      │ 1       │ 1
+   │  ╰─ part3  428 µs        │ 428 µs        │ 428 µs        │ 428 µs        │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              33          │ 33            │ 33            │ 33            │         │
    │              897.2 KB    │ 897.2 KB      │ 897.2 KB      │ 897.2 KB      │         │
@@ -242,7 +242,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              50          │ 50            │ 50            │ 50            │         │
    │              3.336 KB    │ 3.336 KB      │ 3.336 KB      │ 3.336 KB      │         │
    ├─ quest07                 │               │               │               │         │
-   │  ├─ part1  129.2 µs      │ 129.2 µs      │ 129.2 µs      │ 129.2 µs      │ 1       │ 1
+   │  ├─ part1  112.1 µs      │ 112.1 µs      │ 112.1 µs      │ 112.1 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           21          │ 21            │ 21            │ 21            │         │
    │  │           1.541 KB    │ 1.541 KB      │ 1.541 KB      │ 1.541 KB      │         │
@@ -255,7 +255,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           13          │ 13            │ 13            │ 13            │         │
    │  │           471 B       │ 471 B         │ 471 B         │ 471 B         │         │
-   │  ├─ part2  170.2 µs      │ 170.2 µs      │ 170.2 µs      │ 170.2 µs      │ 1       │ 1
+   │  ├─ part2  99.73 µs      │ 99.73 µs      │ 99.73 µs      │ 99.73 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           21          │ 21            │ 21            │ 21            │         │
    │  │           2.465 KB    │ 2.465 KB      │ 2.465 KB      │ 2.465 KB      │         │
@@ -268,7 +268,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           31          │ 31            │ 31            │ 31            │         │
    │  │           903 B       │ 903 B         │ 903 B         │ 903 B         │         │
-   │  ╰─ part3  90.16 ms      │ 90.16 ms      │ 90.16 ms      │ 90.16 ms      │ 1       │ 1
+   │  ╰─ part3  89.42 ms      │ 89.42 ms      │ 89.42 ms      │ 89.42 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              4           │ 4             │ 4             │ 4             │         │
    │              131.1 KB    │ 131.1 KB      │ 131.1 KB      │ 131.1 KB      │         │
@@ -282,7 +282,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              13          │ 13            │ 13            │ 13            │         │
    │              131 KB      │ 131 KB        │ 131 KB        │ 131 KB        │         │
    ├─ quest08                 │               │               │               │         │
-   │  ├─ part1  296.5 µs      │ 296.5 µs      │ 296.5 µs      │ 296.5 µs      │ 1       │ 1
+   │  ├─ part1  145.9 µs      │ 145.9 µs      │ 145.9 µs      │ 145.9 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           73 B        │ 73 B          │ 73 B          │ 73 B          │         │
@@ -292,7 +292,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           66 B        │ 66 B          │ 66 B          │ 66 B          │         │
-   │  ├─ part2  166.1 µs      │ 166.1 µs      │ 166.1 µs      │ 166.1 µs      │ 1       │ 1
+   │  ├─ part2  151.7 µs      │ 151.7 µs      │ 151.7 µs      │ 151.7 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           69 B        │ 69 B          │ 69 B          │ 69 B          │         │
@@ -302,7 +302,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           66 B        │ 66 B          │ 66 B          │ 66 B          │         │
-   │  ╰─ part3  187.8 µs      │ 187.8 µs      │ 187.8 µs      │ 187.8 µs      │ 1       │ 1
+   │  ╰─ part3  81.63 µs      │ 81.63 µs      │ 81.63 µs      │ 81.63 µs      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              2           │ 2             │ 2             │ 2             │         │
    │              32.77 KB    │ 32.77 KB      │ 32.77 KB      │ 32.77 KB      │         │
@@ -316,7 +316,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              10          │ 10            │ 10            │ 10            │         │
    │              32.73 KB    │ 32.73 KB      │ 32.73 KB      │ 32.73 KB      │         │
    ├─ quest09                 │               │               │               │         │
-   │  ├─ part1  257.2 µs      │ 257.2 µs      │ 257.2 µs      │ 257.2 µs      │ 1       │ 1
+   │  ├─ part1  119.8 µs      │ 119.8 µs      │ 119.8 µs      │ 119.8 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           3           │ 3             │ 3             │ 3             │         │
    │  │           147.1 KB    │ 147.1 KB      │ 147.1 KB      │ 147.1 KB      │         │
@@ -329,7 +329,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           96 B        │ 96 B          │ 96 B          │ 96 B          │         │
-   │  ├─ part2  159.9 µs      │ 159.9 µs      │ 159.9 µs      │ 159.9 µs      │ 1       │ 1
+   │  ├─ part2  107.2 µs      │ 107.2 µs      │ 107.2 µs      │ 107.2 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           3           │ 3             │ 3             │ 3             │         │
    │  │           17.42 KB    │ 17.42 KB      │ 17.42 KB      │ 17.42 KB      │         │
@@ -342,7 +342,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           5           │ 5             │ 5             │ 5             │         │
    │  │           992 B       │ 992 B         │ 992 B         │ 992 B         │         │
-   │  ╰─ part3  1.869 ms      │ 1.869 ms      │ 1.869 ms      │ 1.869 ms      │ 1       │ 1
+   │  ╰─ part3  1.885 ms      │ 1.885 ms      │ 1.885 ms      │ 1.885 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              3           │ 3             │ 3             │ 3             │         │
    │              1.597 MB    │ 1.597 MB      │ 1.597 MB      │ 1.597 MB      │         │
@@ -356,7 +356,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              5           │ 5             │ 5             │ 5             │         │
    │              992 B       │ 992 B         │ 992 B         │ 992 B         │         │
    ├─ quest10                 │               │               │               │         │
-   │  ├─ part1  138.4 µs      │ 138.4 µs      │ 138.4 µs      │ 138.4 µs      │ 1       │ 1
+   │  ├─ part1  135.9 µs      │ 135.9 µs      │ 135.9 µs      │ 135.9 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           11          │ 11            │ 11            │ 11            │         │
    │  │           343 B       │ 343 B         │ 343 B         │ 343 B         │         │
@@ -369,7 +369,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           96 B        │ 96 B          │ 96 B          │ 96 B          │         │
-   │  ├─ part2  186 µs        │ 186 µs        │ 186 µs        │ 186 µs        │ 1       │ 1
+   │  ├─ part2  96.54 µs      │ 96.54 µs      │ 96.54 µs      │ 96.54 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           10          │ 10            │ 10            │ 10            │         │
    │  │           8.829 KB    │ 8.829 KB      │ 8.829 KB      │ 8.829 KB      │         │
@@ -382,7 +382,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           7           │ 7             │ 7             │ 7             │         │
    │  │           672 B       │ 672 B         │ 672 B         │ 672 B         │         │
-   │  ╰─ part3  391.6 µs      │ 391.6 µs      │ 391.6 µs      │ 391.6 µs      │ 1       │ 1
+   │  ╰─ part3  256 µs        │ 256 µs        │ 256 µs        │ 256 µs        │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              65          │ 65            │ 65            │ 65            │         │
    │              20.82 KB    │ 20.82 KB      │ 20.82 KB      │ 20.82 KB      │         │
@@ -396,7 +396,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              10          │ 10            │ 10            │ 10            │         │
    │              5.472 KB    │ 5.472 KB      │ 5.472 KB      │ 5.472 KB      │         │
    ├─ quest11                 │               │               │               │         │
-   │  ├─ part1  193.4 µs      │ 193.4 µs      │ 193.4 µs      │ 193.4 µs      │ 1       │ 1
+   │  ├─ part1  73.67 µs      │ 73.67 µs      │ 73.67 µs      │ 73.67 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           11          │ 11            │ 11            │ 11            │         │
    │  │           1.317 KB    │ 1.317 KB      │ 1.317 KB      │ 1.317 KB      │         │
@@ -406,7 +406,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           13          │ 13            │ 13            │ 13            │         │
    │  │           1.638 KB    │ 1.638 KB      │ 1.638 KB      │ 1.638 KB      │         │
-   │  ├─ part2  218.2 µs      │ 218.2 µs      │ 218.2 µs      │ 218.2 µs      │ 1       │ 1
+   │  ├─ part2  91.04 µs      │ 91.04 µs      │ 91.04 µs      │ 91.04 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           25          │ 25            │ 25            │ 25            │         │
    │  │           4.835 KB    │ 4.835 KB      │ 4.835 KB      │ 4.835 KB      │         │
@@ -416,7 +416,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           33          │ 33            │ 33            │ 33            │         │
    │  │           6.998 KB    │ 6.998 KB      │ 6.998 KB      │ 6.998 KB      │         │
-   │  ╰─ part3  7.393 ms      │ 7.393 ms      │ 7.393 ms      │ 7.393 ms      │ 1       │ 1
+   │  ╰─ part3  7.008 ms      │ 7.008 ms      │ 7.008 ms      │ 7.008 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              106         │ 106           │ 106           │ 106           │         │
    │              25.71 KB    │ 25.71 KB      │ 25.71 KB      │ 25.71 KB      │         │
@@ -430,7 +430,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              50          │ 50            │ 50            │ 50            │         │
    │              3.2 KB      │ 3.2 KB        │ 3.2 KB        │ 3.2 KB        │         │
    ├─ quest12                 │               │               │               │         │
-   │  ├─ part1  201 µs        │ 201 µs        │ 201 µs        │ 201 µs        │ 1       │ 1
+   │  ├─ part1  82.78 µs      │ 82.78 µs      │ 82.78 µs      │ 82.78 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           235 B       │ 235 B         │ 235 B         │ 235 B         │         │
@@ -440,7 +440,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           66 B        │ 66 B          │ 66 B          │ 66 B          │         │
-   │  ├─ part2  143.1 µs      │ 143.1 µs      │ 143.1 µs      │ 143.1 µs      │ 1       │ 1
+   │  ├─ part2  103.2 µs      │ 103.2 µs      │ 103.2 µs      │ 103.2 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           2           │ 2             │ 2             │ 2             │         │
    │  │           2.165 KB    │ 2.165 KB      │ 2.165 KB      │ 2.165 KB      │         │
@@ -450,7 +450,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           1           │ 1             │ 1             │ 1             │         │
    │  │           66 B        │ 66 B          │ 66 B          │ 66 B          │         │
-   │  ╰─ part3  196.2 µs      │ 196.2 µs      │ 196.2 µs      │ 196.2 µs      │ 1       │ 1
+   │  ╰─ part3  82.76 µs      │ 82.76 µs      │ 82.76 µs      │ 82.76 µs      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              2           │ 2             │ 2             │ 2             │         │
    │              5.081 KB    │ 5.081 KB      │ 5.081 KB      │ 5.081 KB      │         │
@@ -461,7 +461,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              1           │ 1             │ 1             │ 1             │         │
    │              66 B        │ 66 B          │ 66 B          │ 66 B          │         │
    ├─ quest13                 │               │               │               │         │
-   │  ├─ part1  170.9 µs      │ 170.9 µs      │ 170.9 µs      │ 170.9 µs      │ 1       │ 1
+   │  ├─ part1  78.78 µs      │ 78.78 µs      │ 78.78 µs      │ 78.78 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           16          │ 16            │ 16            │ 16            │         │
    │  │           6.576 KB    │ 6.576 KB      │ 6.576 KB      │ 6.576 KB      │         │
@@ -474,7 +474,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           11          │ 11            │ 11            │ 11            │         │
    │  │           4.256 KB    │ 4.256 KB      │ 4.256 KB      │ 4.256 KB      │         │
-   │  ├─ part2  315.4 µs      │ 315.4 µs      │ 315.4 µs      │ 315.4 µs      │ 1       │ 1
+   │  ├─ part2  256.8 µs      │ 256.8 µs      │ 256.8 µs      │ 256.8 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           48          │ 48            │ 48            │ 48            │         │
    │  │           167.5 KB    │ 167.5 KB      │ 167.5 KB      │ 167.5 KB      │         │
@@ -487,7 +487,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           24          │ 24            │ 24            │ 24            │         │
    │  │           119 KB      │ 119 KB        │ 119 KB        │ 119 KB        │         │
-   │  ╰─ part3  2.062 ms      │ 2.062 ms      │ 2.062 ms      │ 2.062 ms      │ 1       │ 1
+   │  ╰─ part3  2.018 ms      │ 2.018 ms      │ 2.018 ms      │ 2.018 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              258         │ 258           │ 258           │ 258           │         │
    │              1.353 MB    │ 1.353 MB      │ 1.353 MB      │ 1.353 MB      │         │
@@ -501,7 +501,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              32          │ 32            │ 32            │ 32            │         │
    │              933.6 KB    │ 933.6 KB      │ 933.6 KB      │ 933.6 KB      │         │
    ├─ quest14                 │               │               │               │         │
-   │  ├─ part1  191 µs        │ 191 µs        │ 191 µs        │ 191 µs        │ 1       │ 1
+   │  ├─ part1  75.48 µs      │ 75.48 µs      │ 75.48 µs      │ 75.48 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           3           │ 3             │ 3             │ 3             │         │
    │  │           10.45 KB    │ 10.45 KB      │ 10.45 KB      │ 10.45 KB      │         │
@@ -511,7 +511,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           10          │ 10            │ 10            │ 10            │         │
    │  │           13.52 KB    │ 13.52 KB      │ 13.52 KB      │ 13.52 KB      │         │
-   │  ├─ part2  427.8 µs      │ 427.8 µs      │ 427.8 µs      │ 427.8 µs      │ 1       │ 1
+   │  ├─ part2  292.8 µs      │ 292.8 µs      │ 292.8 µs      │ 292.8 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           4           │ 4             │ 4             │ 4             │         │
    │  │           178.4 KB    │ 178.4 KB      │ 178.4 KB      │ 178.4 KB      │         │
@@ -521,7 +521,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         dealloc:      │               │               │               │         │
    │  │           17          │ 17            │ 17            │ 17            │         │
    │  │           214 KB      │ 214 KB        │ 214 KB        │ 214 KB        │         │
-   │  ╰─ part3  14.7 ms       │ 14.7 ms       │ 14.7 ms       │ 14.7 ms       │ 1       │ 1
+   │  ╰─ part3  14.99 ms      │ 14.99 ms      │ 14.99 ms      │ 14.99 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              7           │ 7             │ 7             │ 7             │         │
    │              294.4 KB    │ 294.4 KB      │ 294.4 KB      │ 294.4 KB      │         │
@@ -535,7 +535,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              100         │ 100           │ 100           │ 100           │         │
    │              39.68 KB    │ 39.68 KB      │ 39.68 KB      │ 39.68 KB      │         │
    ├─ quest15                 │               │               │               │         │
-   │  ├─ part1  376.9 µs      │ 376.9 µs      │ 376.9 µs      │ 376.9 µs      │ 1       │ 1
+   │  ├─ part1  203.6 µs      │ 203.6 µs      │ 203.6 µs      │ 203.6 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           33          │ 33            │ 33            │ 33            │         │
    │  │           97.37 KB    │ 97.37 KB      │ 97.37 KB      │ 97.37 KB      │         │
@@ -548,7 +548,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           19          │ 19            │ 19            │ 19            │         │
    │  │           74.53 KB    │ 74.53 KB      │ 74.53 KB      │ 74.53 KB      │         │
-   │  ├─ part2  8.977 ms      │ 8.977 ms      │ 8.977 ms      │ 8.977 ms      │ 1       │ 1
+   │  ├─ part2  8.164 ms      │ 8.164 ms      │ 8.164 ms      │ 8.164 ms      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           84          │ 84            │ 84            │ 84            │         │
    │  │           5.798 MB    │ 5.798 MB      │ 5.798 MB      │ 5.798 MB      │         │
@@ -561,7 +561,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           31          │ 31            │ 31            │ 31            │         │
    │  │           4.611 MB    │ 4.611 MB      │ 4.611 MB      │ 4.611 MB      │         │
-   │  ╰─ part3  1.512 m       │ 1.512 m       │ 1.512 m       │ 1.512 m       │ 1       │ 1
+   │  ╰─ part3  1.547 m       │ 1.547 m       │ 1.547 m       │ 1.547 m       │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              84          │ 84            │ 84            │ 84            │         │
    │              11.81 GB    │ 11.81 GB      │ 11.81 GB      │ 11.81 GB      │         │
@@ -575,7 +575,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              52          │ 52            │ 52            │ 52            │         │
    │              9.403 GB    │ 9.403 GB      │ 9.403 GB      │ 9.403 GB      │         │
    ├─ quest16                 │               │               │               │         │
-   │  ├─ part1  321.9 µs      │ 321.9 µs      │ 321.9 µs      │ 321.9 µs      │ 1       │ 1
+   │  ├─ part1  285.6 µs      │ 285.6 µs      │ 285.6 µs      │ 285.6 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           9           │ 9             │ 9             │ 9             │         │
    │  │           1.878 KB    │ 1.878 KB      │ 1.878 KB      │ 1.878 KB      │         │
@@ -588,7 +588,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           9           │ 9             │ 9             │ 9             │         │
    │  │           1.024 KB    │ 1.024 KB      │ 1.024 KB      │ 1.024 KB      │         │
-   │  ├─ part2  29.24 ms      │ 29.24 ms      │ 29.24 ms      │ 29.24 ms      │ 1       │ 1
+   │  ├─ part2  29.23 ms      │ 29.23 ms      │ 29.23 ms      │ 29.23 ms      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           15          │ 15            │ 15            │ 15            │         │
    │  │           10.02 KB    │ 10.02 KB      │ 10.02 KB      │ 10.02 KB      │         │
@@ -601,7 +601,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           36          │ 36            │ 36            │ 36            │         │
    │  │           6.624 KB    │ 6.624 KB      │ 6.624 KB      │ 6.624 KB      │         │
-   │  ╰─ part3  14.67 ms      │ 14.67 ms      │ 14.67 ms      │ 14.67 ms      │ 1       │ 1
+   │  ╰─ part3  14.19 ms      │ 14.19 ms      │ 14.19 ms      │ 14.19 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              10          │ 10            │ 10            │ 10            │         │
    │              6.292 KB    │ 6.292 KB      │ 6.292 KB      │ 6.292 KB      │         │
@@ -615,7 +615,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │              20          │ 20            │ 20            │ 20            │         │
    │              4.32 KB     │ 4.32 KB       │ 4.32 KB       │ 4.32 KB       │         │
    ├─ quest17                 │               │               │               │         │
-   │  ├─ part1  335.4 µs      │ 335.4 µs      │ 335.4 µs      │ 335.4 µs      │ 1       │ 1
+   │  ├─ part1  92.66 µs      │ 92.66 µs      │ 92.66 µs      │ 92.66 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           4           │ 4             │ 4             │ 4             │         │
    │  │           13.47 KB    │ 13.47 KB      │ 13.47 KB      │ 13.47 KB      │         │
@@ -628,7 +628,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           11          │ 11            │ 11            │ 11            │         │
    │  │           12.71 KB    │ 12.71 KB      │ 12.71 KB      │ 12.71 KB      │         │
-   │  ├─ part2  955.3 µs      │ 955.3 µs      │ 955.3 µs      │ 955.3 µs      │ 1       │ 1
+   │  ├─ part2  812.6 µs      │ 812.6 µs      │ 812.6 µs      │ 812.6 µs      │ 1       │ 1
    │  │         max alloc:    │               │               │               │         │
    │  │           4           │ 4             │ 4             │ 4             │         │
    │  │           1.59 MB     │ 1.59 MB       │ 1.59 MB       │ 1.59 MB       │         │
@@ -641,7 +641,7 @@ memory          fastest       │ slowest       │ median        │ mean      
    │  │         grow:         │               │               │               │         │
    │  │           22          │ 22            │ 22            │ 22            │         │
    │  │           1.58 MB     │ 1.58 MB       │ 1.58 MB       │ 1.58 MB       │         │
-   │  ╰─ part3  6.447 ms      │ 6.447 ms      │ 6.447 ms      │ 6.447 ms      │ 1       │ 1
+   │  ╰─ part3  7.065 ms      │ 7.065 ms      │ 7.065 ms      │ 7.065 ms      │ 1       │ 1
    │            max alloc:    │               │               │               │         │
    │              179         │ 179           │ 179           │ 179           │         │
    │              3.212 MB    │ 3.212 MB      │ 3.212 MB      │ 3.212 MB      │         │
@@ -654,44 +654,124 @@ memory          fastest       │ slowest       │ median        │ mean      
    │            grow:         │               │               │               │         │
    │              12077       │ 12077         │ 12077         │ 12077         │         │
    │              20.36 MB    │ 20.36 MB      │ 20.36 MB      │ 20.36 MB      │         │
-   ╰─ quest18                 │               │               │               │         │
-      ├─ part1  120 µs        │ 120 µs        │ 120 µs        │ 120 µs        │ 1       │ 1
+   ├─ quest18                 │               │               │               │         │
+   │  ├─ part1  84.73 µs      │ 84.73 µs      │ 84.73 µs      │ 84.73 µs      │ 1       │ 1
+   │  │         max alloc:    │               │               │               │         │
+   │  │           16          │ 16            │ 16            │ 16            │         │
+   │  │           4.628 KB    │ 4.628 KB      │ 4.628 KB      │ 4.628 KB      │         │
+   │  │         alloc:        │               │               │               │         │
+   │  │           22          │ 22            │ 22            │ 22            │         │
+   │  │           5.602 KB    │ 5.602 KB      │ 5.602 KB      │ 5.602 KB      │         │
+   │  │         dealloc:      │               │               │               │         │
+   │  │           21          │ 21            │ 21            │ 21            │         │
+   │  │           5.539 KB    │ 5.539 KB      │ 5.539 KB      │ 5.539 KB      │         │
+   │  │         grow:         │               │               │               │         │
+   │  │           2           │ 2             │ 2             │ 2             │         │
+   │  │           288 B       │ 288 B         │ 288 B         │ 288 B         │         │
+   │  ├─ part2  452.2 µs      │ 452.2 µs      │ 452.2 µs      │ 452.2 µs      │ 1       │ 1
+   │  │         max alloc:    │               │               │               │         │
+   │  │           76          │ 76            │ 76            │ 76            │         │
+   │  │           142.5 KB    │ 142.5 KB      │ 142.5 KB      │ 142.5 KB      │         │
+   │  │         alloc:        │               │               │               │         │
+   │  │           87          │ 87            │ 87            │ 87            │         │
+   │  │           176.4 KB    │ 176.4 KB      │ 176.4 KB      │ 176.4 KB      │         │
+   │  │         dealloc:      │               │               │               │         │
+   │  │           86          │ 86            │ 86            │ 86            │         │
+   │  │           165.2 KB    │ 165.2 KB      │ 165.2 KB      │ 165.2 KB      │         │
+   │  │         grow:         │               │               │               │         │
+   │  │           7           │ 7             │ 7             │ 7             │         │
+   │  │           3.168 KB    │ 3.168 KB      │ 3.168 KB      │ 3.168 KB      │         │
+   │  ╰─ part3  107.2 ms      │ 107.2 ms      │ 107.2 ms      │ 107.2 ms      │ 1       │ 1
+   │            max alloc:    │               │               │               │         │
+   │              209         │ 209           │ 209           │ 209           │         │
+   │              381.3 KB    │ 381.3 KB      │ 381.3 KB      │ 381.3 KB      │         │
+   │            alloc:        │               │               │               │         │
+   │              3105        │ 3105          │ 3105          │ 3105          │         │
+   │              61.24 MB    │ 61.24 MB      │ 61.24 MB      │ 61.24 MB      │         │
+   │            dealloc:      │               │               │               │         │
+   │              3104        │ 3104          │ 3104          │ 3104          │         │
+   │              61.26 MB    │ 61.26 MB      │ 61.26 MB      │ 61.26 MB      │         │
+   │            grow:         │               │               │               │         │
+   │              452         │ 452           │ 452           │ 452           │         │
+   │              39.98 KB    │ 39.98 KB      │ 39.98 KB      │ 39.98 KB      │         │
+   ├─ quest19                 │               │               │               │         │
+   │  ├─ part1  142.7 µs      │ 142.7 µs      │ 142.7 µs      │ 142.7 µs      │ 1       │ 1
+   │  │         max alloc:    │               │               │               │         │
+   │  │           13          │ 13            │ 13            │ 13            │         │
+   │  │           1.558 KB    │ 1.558 KB      │ 1.558 KB      │ 1.558 KB      │         │
+   │  │         alloc:        │               │               │               │         │
+   │  │           19          │ 19            │ 19            │ 19            │         │
+   │  │           1.118 KB    │ 1.118 KB      │ 1.118 KB      │ 1.118 KB      │         │
+   │  │         dealloc:      │               │               │               │         │
+   │  │           18          │ 18            │ 18            │ 18            │         │
+   │  │           1.726 KB    │ 1.726 KB      │ 1.726 KB      │ 1.726 KB      │         │
+   │  │         grow:         │               │               │               │         │
+   │  │           9           │ 9             │ 9             │ 9             │         │
+   │  │           672 B       │ 672 B         │ 672 B         │ 672 B         │         │
+   │  ├─ part2  96.57 µs      │ 96.57 µs      │ 96.57 µs      │ 96.57 µs      │ 1       │ 1
+   │  │         max alloc:    │               │               │               │         │
+   │  │           67          │ 67            │ 67            │ 67            │         │
+   │  │           23.83 KB    │ 23.83 KB      │ 23.83 KB      │ 23.83 KB      │         │
+   │  │         alloc:        │               │               │               │         │
+   │  │           267         │ 267           │ 267           │ 267           │         │
+   │  │           72.72 KB    │ 72.72 KB      │ 72.72 KB      │ 72.72 KB      │         │
+   │  │         dealloc:      │               │               │               │         │
+   │  │           266         │ 266           │ 266           │ 266           │         │
+   │  │           82.93 KB    │ 82.93 KB      │ 82.93 KB      │ 82.93 KB      │         │
+   │  │         grow:         │               │               │               │         │
+   │  │           90          │ 90            │ 90            │ 90            │         │
+   │  │           11.42 KB    │ 11.42 KB      │ 11.42 KB      │ 11.42 KB      │         │
+   │  ╰─ part3  816.8 µs      │ 816.8 µs      │ 816.8 µs      │ 816.8 µs      │ 1       │ 1
+   │            max alloc:    │               │               │               │         │
+   │              235         │ 235           │ 235           │ 235           │         │
+   │              319.8 KB    │ 319.8 KB      │ 319.8 KB      │ 319.8 KB      │         │
+   │            alloc:        │               │               │               │         │
+   │              2967        │ 2967          │ 2967          │ 2967          │         │
+   │              3.888 MB    │ 3.888 MB      │ 3.888 MB      │ 3.888 MB      │         │
+   │            dealloc:      │               │               │               │         │
+   │              2966        │ 2966          │ 2966          │ 2966          │         │
+   │              4.034 MB    │ 4.034 MB      │ 4.034 MB      │ 4.034 MB      │         │
+   │            grow:         │               │               │               │         │
+   │              472         │ 472           │ 472           │ 472           │         │
+   │              161.1 KB    │ 161.1 KB      │ 161.1 KB      │ 161.1 KB      │         │
+   ╰─ quest20                 │               │               │               │         │
+      ├─ part1  2.064 ms      │ 2.064 ms      │ 2.064 ms      │ 2.064 ms      │ 1       │ 1
       │         max alloc:    │               │               │               │         │
-      │           16          │ 16            │ 16            │ 16            │         │
-      │           4.628 KB    │ 4.628 KB      │ 4.628 KB      │ 4.628 KB      │         │
+      │           31          │ 31            │ 31            │ 31            │         │
+      │           267.4 KB    │ 267.4 KB      │ 267.4 KB      │ 267.4 KB      │         │
       │         alloc:        │               │               │               │         │
-      │           22          │ 22            │ 22            │ 22            │         │
-      │           5.602 KB    │ 5.602 KB      │ 5.602 KB      │ 5.602 KB      │         │
+      │           40          │ 40            │ 40            │ 40            │         │
+      │           137.9 KB    │ 137.9 KB      │ 137.9 KB      │ 137.9 KB      │         │
       │         dealloc:      │               │               │               │         │
+      │           39          │ 39            │ 39            │ 39            │         │
+      │           334.2 KB    │ 334.2 KB      │ 334.2 KB      │ 334.2 KB      │         │
+      │         grow:         │               │               │               │         │
+      │           13          │ 13            │ 13            │ 13            │         │
+      │           197 KB      │ 197 KB        │ 197 KB        │ 197 KB        │         │
+      ├─ part2  3.102 s       │ 3.102 s       │ 3.102 s       │ 3.102 s       │ 1       │ 1
+      │         max alloc:    │               │               │               │         │
+      │           54          │ 54            │ 54            │ 54            │         │
+      │           30.56 MB    │ 30.56 MB      │ 30.56 MB      │ 30.56 MB      │         │
+      │         alloc:        │               │               │               │         │
+      │           69          │ 69            │ 69            │ 69            │         │
+      │           10.77 MB    │ 10.77 MB      │ 10.77 MB      │ 10.77 MB      │         │
+      │         dealloc:      │               │               │               │         │
+      │           68          │ 68            │ 68            │ 68            │         │
+      │           35.93 MB    │ 35.93 MB      │ 35.93 MB      │ 35.93 MB      │         │
+      │         grow:         │               │               │               │         │
       │           21          │ 21            │ 21            │ 21            │         │
-      │           5.539 KB    │ 5.539 KB      │ 5.539 KB      │ 5.539 KB      │         │
-      │         grow:         │               │               │               │         │
-      │           2           │ 2             │ 2             │ 2             │         │
-      │           288 B       │ 288 B         │ 288 B         │ 288 B         │         │
-      ├─ part2  408.3 µs      │ 408.3 µs      │ 408.3 µs      │ 408.3 µs      │ 1       │ 1
-      │         max alloc:    │               │               │               │         │
-      │           76          │ 76            │ 76            │ 76            │         │
-      │           142.5 KB    │ 142.5 KB      │ 142.5 KB      │ 142.5 KB      │         │
-      │         alloc:        │               │               │               │         │
-      │           87          │ 87            │ 87            │ 87            │         │
-      │           176.4 KB    │ 176.4 KB      │ 176.4 KB      │ 176.4 KB      │         │
-      │         dealloc:      │               │               │               │         │
-      │           86          │ 86            │ 86            │ 86            │         │
-      │           165.2 KB    │ 165.2 KB      │ 165.2 KB      │ 165.2 KB      │         │
-      │         grow:         │               │               │               │         │
-      │           7           │ 7             │ 7             │ 7             │         │
-      │           3.168 KB    │ 3.168 KB      │ 3.168 KB      │ 3.168 KB      │         │
-      ╰─ part3  109 ms        │ 109 ms        │ 109 ms        │ 109 ms        │ 1       │ 1
+      │           25.16 MB    │ 25.16 MB      │ 25.16 MB      │ 25.16 MB      │         │
+      ╰─ part3  216.3 µs      │ 216.3 µs      │ 216.3 µs      │ 216.3 µs      │ 1       │ 1
                 max alloc:    │               │               │               │         │
-                  209         │ 209           │ 209           │ 209           │         │
-                  381.3 KB    │ 381.3 KB      │ 381.3 KB      │ 381.3 KB      │         │
+                  15          │ 15            │ 15            │ 15            │         │
+                  3.687 KB    │ 3.687 KB      │ 3.687 KB      │ 3.687 KB      │         │
                 alloc:        │               │               │               │         │
-                  3105        │ 3105          │ 3105          │ 3105          │         │
-                  61.24 MB    │ 61.24 MB      │ 61.24 MB      │ 61.24 MB      │         │
+                  16          │ 16            │ 16            │ 16            │         │
+                  2.505 KB    │ 2.505 KB      │ 2.505 KB      │ 2.505 KB      │         │
                 dealloc:      │               │               │               │         │
-                  3104        │ 3104          │ 3104          │ 3104          │         │
-                  61.26 MB    │ 61.26 MB      │ 61.26 MB      │ 61.26 MB      │         │
+                  15          │ 15            │ 15            │ 15            │         │
+                  2.986 KB    │ 2.986 KB      │ 2.986 KB      │ 2.986 KB      │         │
                 grow:         │               │               │               │         │
-                  452         │ 452           │ 452           │ 452           │         │
-                  39.98 KB    │ 39.98 KB      │ 39.98 KB      │ 39.98 KB      │         │
+                  6           │ 6             │ 6             │ 6             │         │
+                  1.248 KB    │ 1.248 KB      │ 1.248 KB      │ 1.248 KB      │         │
 
