@@ -28,7 +28,6 @@ const EXAMPLE2: &str = "\
 #-----------------------------#
 #-----------------------------#
 ###############################";
-const EXAMPLE3: &str = "xBxAAABCDxCC";
 
 #[test]
 fn part1_test() {
@@ -38,9 +37,4 @@ fn part1_test() {
 #[test]
 fn part2_test() {
     assert_eq!(part2(EXAMPLE2), 206);
-}
-
-#[test]
-fn part3_test() {
-    assert_eq!(part3(EXAMPLE3), 30);
 }

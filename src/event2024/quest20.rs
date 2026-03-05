@@ -61,13 +61,14 @@ pub fn part3(notes: &str) -> i32 {
 
     let mut column_costs: Vec<(usize, i32)> = Vec::new();
 
-        let start = air_map[0]
+    let start = air_map[0]
         .iter()
-        .position(|v| *v == Airspace::Beacon(b'S')).unwrap();
+        .position(|v| *v == Airspace::Beacon(b'S'))
+        .unwrap();
 
     'columns: for x in 0..width {
         let mut flight_cost: i32 = 0;
-        for y in  0..height {
+        for y in 0..height {
             match air_map[y][x] {
                 Airspace::Cold => flight_cost -= 2,
                 Airspace::Hot => flight_cost += 1,
@@ -78,16 +79,18 @@ pub fn part3(notes: &str) -> i32 {
         column_costs.push((x, flight_cost));
     }
 
-    let &(return_col, cost) = column_costs.iter().max_by(|a, b| {
-        (a.1 - (a.0.abs_diff(start) as i32)).cmp(&(b.1 - (b.0.abs_diff(start) as i32)))
-    }).unwrap();
+    let &(return_col, cost) = column_costs
+        .iter()
+        .max_by(|a, b| {
+            (a.1 - (a.0.abs_diff(start) as i32)).cmp(&(b.1 - (b.0.abs_diff(start) as i32)))
+        })
+        .unwrap();
 
     let distance_to_col = start.abs_diff(return_col) as i32;
 
     let adjusted_altitude = altitude - distance_to_col;
     let times_looped = adjusted_altitude / cost.abs();
     let remainder = adjusted_altitude % cost.abs();
-
 
     (times_looped * height as i32) + remainder + distance_to_col
 }
