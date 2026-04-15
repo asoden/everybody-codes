@@ -9,6 +9,7 @@ resolver = "3"
 panic = "abort"
 codegen-units = 1
 lto = "fat"
+opt-level = 3
 
 [dependencies]
 ahash = "0.8.12"
