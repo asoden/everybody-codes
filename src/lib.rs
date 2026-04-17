@@ -29,4 +29,5 @@ pub mod event2024 {
 
 pub mod story01 {
     pub mod quest01;
+    pub mod quest02;
 }

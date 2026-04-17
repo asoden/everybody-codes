@@ -77,5 +77,5 @@ run!(event2024
 );
 
 run!(story01
-    quest01
+    quest01, quest02
 );
