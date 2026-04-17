@@ -23,7 +23,7 @@ impl Node<'_> {
 type Tree<'a> = Vec<Node<'a>>;
 
 pub fn part1(notes: &str) -> String {
-    build(notes, |_,_|())
+    build(notes, |_, _| ())
 }
 
 pub fn part2(notes: &str) -> String {
@@ -39,7 +39,7 @@ pub fn part3(notes: &str) -> String {
     })
 }
 
-fn build(notes: &str, swapper:  for<'a> fn(node1: &mut Node<'a>, node2: &mut Node<'a>)) -> String {
+fn build(notes: &str, swapper: for<'a> fn(node1: &mut Node<'a>, node2: &mut Node<'a>)) -> String {
     let mut tree = Vec::new();
 
     for line in notes.lines() {
@@ -56,9 +56,11 @@ fn build(notes: &str, swapper:  for<'a> fn(node1: &mut Node<'a>, node2: &mut Nod
             }
         }
 
-        if line.starts_with("SWAP"){
+        if line.starts_with("SWAP") {
             let index = line.split_once(" ").unwrap().1.parse::<usize>().unwrap();
-            let [first, second] = tree.get_disjoint_mut([2 * index - 2, 2 * index - 1]).unwrap();
+            let [first, second] = tree
+                .get_disjoint_mut([2 * index - 2, 2 * index - 1])
+                .unwrap();
             swapper(first, second);
         }
     }
@@ -74,7 +76,7 @@ fn insert(nodes: &mut Tree<'_>, from: usize, to: usize) {
         if let Some(next) = nodes[to].left {
             insert(nodes, from, next);
         } else {
-            nodes[to].left =  Some(from);
+            nodes[to].left = Some(from);
         }
     } else if let Some(next) = nodes[to].right {
         insert(nodes, from, next);
@@ -88,7 +90,6 @@ fn bfs(nodes: &Tree<'_>, from: usize) -> String {
     let mut messages = Vec::new();
 
     todo.push_back((from, 0));
-
 
     while let Some((index, depth)) = todo.pop_front() {
         if messages.len() == depth {
@@ -107,5 +108,8 @@ fn bfs(nodes: &Tree<'_>, from: usize) -> String {
     }
 
     let max = messages.iter().map(String::len).max().unwrap();
-    messages.into_iter().find(|message| message.len() == max).unwrap()
+    messages
+        .into_iter()
+        .find(|message| message.len() == max)
+        .unwrap()
 }
