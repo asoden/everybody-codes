@@ -7,7 +7,7 @@ fn main() {
     let event = args.next();
     let quest = args.next();
 
-    let solutions = [event2024(), story01()];
+    let solutions = [event2024(), story01(), event2026()];
 
     // Filter solutions then pretty print output.
     solutions
@@ -78,4 +78,8 @@ run!(event2024
 
 run!(story01
     quest01, quest02, quest03
+);
+
+run!(event2026
+    quest01
 );
