@@ -76,5 +76,5 @@ benchmark!(story01
 );
 
 benchmark!(event2026
-    quest01
+    quest01, quest02
 );

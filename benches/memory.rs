@@ -79,3 +79,7 @@ benchmark!(event2024
 benchmark!(story01
     quest01, quest02, quest03
 );
+
+benchmark!(event2026
+    quest01, quest02
+);
