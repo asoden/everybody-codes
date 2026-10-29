@@ -36,4 +36,5 @@ pub mod story01 {
 pub mod event2026 {
     pub mod quest01;
     pub mod quest02;
+    pub mod quest03;
 }
