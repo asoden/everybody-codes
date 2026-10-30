@@ -1,3 +1,5 @@
+use rayon::prelude::*;
+
 pub fn part1(notes: &str) -> u64 {
     wtf_is_this_numbering(notes)
 }
@@ -33,6 +35,7 @@ pub fn part3(notes: &str) -> u64 {
                         .sum();
 
                     (0..vote)
+                        .into_par_iter()
                         .all(|y| {
                             let potential: u64 = left
                                 .into_iter()
